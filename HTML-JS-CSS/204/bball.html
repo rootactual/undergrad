@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Bouncing Ball (HTML 5)</title>
+
+    <style>
+        canvas {
+            border: 1px solid black;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Bouncing a Bowling Ball on Concrete</h2>
+        <canvas id="gameCanvas"></canvas>
+        <p>Throw the ball by holding and releasing the left mouse button on the canvas (reverse slingshot)</p>
+        <ul>
+            <li>gravity - downward force constantly applied to the ball</li>
+            <li>damping - velocity reduction force whenever contacting a surface</li>
+            <li>traction - slows horizontal movement when contacting the floor/ground</li>
+        </ul>
+        <p>
+            The javascript for this page is slightly modified from the code
+            <a href="https://stackoverflow.com/questions/29982228/how-to-apply-gravity-to-bouncing-balls-in-javascript">here</a>, provided by Shomz
+        </p>
+    </section>
+
+    <script>
+        var canvas,
+            ctx,
+            cx = 100,
+            cy = 100,
+            vx = 2,
+            vy = 5,
+            radius = 20,
+            //*** CIT204 - these are the variables you will change ***
+            gravity = 2.85,
+            damping = 0.72,
+            traction = 0.98,
+            paused = false;
+
+        function init() {
+            canvas = document.getElementById("gameCanvas");
+            ctx = canvas.getContext("2d");
+            canvas.width = 800;
+            canvas.height = 400;
+            circle();
+        }
+
+        function circle() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            if (!paused)
+                requestAnimationFrame(circle);
+
+            if (cx + radius >= canvas.width) {
+                vx = -vx * damping;
+                cx = canvas.width - radius;
+            } else if (cx - radius <= 0) {
+                vx = -vx * damping;
+                cx = radius;
+            }
+
+            if (cy + radius >= canvas.height) {
+                vy = -vy * damping;
+                cy = canvas.height - radius;
+                vx *= traction;
+            } else if (cy - radius <= 0) {
+                vy = -vy * damping;
+                cy = radius;
+            }
+
+            vy += gravity;
+            cx += vx;
+            cy += vy;
+
+            ctx.beginPath();
+            ctx.arc(cx, cy, radius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = '#0000ff';
+            ctx.fill();
+        }
+
+        init()
+
+        // fancy/irrelevant mouse grab'n'throw stuff below
+        canvas.addEventListener('mousedown', handleMouseDown);
+        canvas.addEventListener('mouseup', handleMouseUp);
+
+        function handleMouseDown(e) {
+            cx = e.pageX - canvas.offsetLeft;
+            cy = e.pageY - canvas.offsetTop;
+            vx = vy = 0;
+            paused = true;
+        }
+
+        function handleMouseUp(e) {
+            vx = e.pageX - canvas.offsetLeft - cx;
+            vy = e.pageY - canvas.offsetTop - cy;
+            paused = false;
+            circle();
+        }
+    </script>
+    <footer>
+        <a href="index.html">Back to Homepage</a>
+    </footer>
+</body>
+</html>

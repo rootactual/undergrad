@@ -1,0 +1,28 @@
+details {
+
+background-color: teal;
+width: 30%;
+
+}
+
+details a:hover {
+
+background-color: green;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.audioWide {
+    width:75%;
+}
+
+footer a:hover {
+    font-size:115%;
+}
+
+.grayvid {
+    filter:grayscale(100%);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style/finalCSS.css">
+	<title>My</title>
+</head>
+
+<body>
+
+<h3>Q1</h3>
+<p id="para1"><b>"The most important six inches on the battlefield is between your ears." - James Mattis</b></p>
+<button onclick="changeColor('blue');">blue</button>
+<button onclick="changeColor('red');">red</button>
+<button onclick="changeColor('black');">black</button>
+
+
+<script>
+function changeColor(newColor) {
+  if (newColor == 'blue') {
+    document.getElementById("para1").style.color = "blue";
+  } else if (newColor == 'red') {
+		document.getElementById("para1").style.color = "red";
+	} else {
+		document.getElementById("para1").style.color = "black";
+	}
+}
+</script>
+
+<h3>Q2</h3>
+<div class="smallbox sbr"></div>
+<div class="smallbox sbo"></div>
+<div class="smallbox sby"></div>
+<div class="smallbox sbg"></div>
+<div class="smallbox sbb"></div>
+<div class="smallbox sbi"></div>
+<div class="smallbox sbv"></div>
+
+<div class="spinbox clearbox"></div>
+<div class="spinbox sborange"></div>
+<div class="spinbox sbyellow"></div>
+<div class="spinbox sbgreen"></div>
+<div class="spinbox sbblue"></div>
+<div class="spinbox sbindigo"></div>
+<div class="spinbox sbviolet"></div>
+
+
+
+<div class="clearbox"></div>
+<h3>Q3</h3>
+<div id="s2sd1" class="side2side"></div>
+<div id="s2sd2" class="side2side"></div>
+<div id="s2sd3" class="side2side"></div>
+<div id="s2sd4" class="side2side"></div>
+<div id="s2sd5" class="side2side"></div>
+<!--end of Q3-->
+
+
+<h3>Q4</h3>
+<img id="L1" src="images/7.png">
+<img id="L2" src="images/1.png">
+<img id="L3" src="images/6.png">
+<img id="L4" src="images/2.png">
+<img id="L5" src="images/4.png">
+<img id="L6" src="images/3.png">
+<img id="L7" src="images/5.png">
+<img id="L8" src="images/8.png">
+<button onclick="KFY();">Shuffle</button>
+<button onclick="KFYreset();">Solution</button>
+<script>
+function changeImage(imgChg) {
+  var newImg = document.getElementById(imgChg);
+  newImg.src = "images/" + Math.floor((Math.random() * 8) + 1) + ".png";
+}
+
+function KFY() {
+  var array = [1,2,3,4,5,6,7,8];
+  var m = array.length, t, i;
+  while (m) {
+    i = Math.floor(Math.random() * m--);
+    t = array[m];
+    array[m] = array[i];
+    array[i] = t;
+  }
+  var newImg;
+  for (i=0; i<8; i++) {
+    newImg = document.getElementById('L'+(i+1));
+	newImg.src = "images/" + array[i] + ".png";
+  }
+}
+
+function KFYreset() {
+  var array = [1,2,3,4,5,6,7,8];
+  var newImg;
+  for (i=0; i<8; i++) {
+    newImg = document.getElementById('L'+(i+1));
+	newImg.src = "images/" + array[i] + ".png";
+  }
+}
+</script>
+
+<p><a href="http://student.***.edu/***">Homepage</a></p>
+
+</body>
+</html>

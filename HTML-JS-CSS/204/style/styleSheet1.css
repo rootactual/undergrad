@@ -1,0 +1,77 @@
+/*using red-ish color scheme 
+Light to dark: FFAAAA, D46A6A, AA3939, 801515, 550000
+*/
+
+#main {width: 800px;}
+.centerIt {text-align: center;}
+.sel {background-color: #AA3939;}
+
+#top-header {
+	background-color: #AA3939;
+	padding: 25px;
+	overflow: auto;
+}
+#top-header > h1 {
+	color: #FFAAAA;
+	font-size: 5em;
+	float: none;
+}
+#top-header > h2 {
+	color: #550000;
+	font-family: fantasy;
+	float: right;
+}
+
+.menu {
+	background-color: #D46A6A;
+	width: 100%;
+	overflow: auto;
+}
+.menu ul {
+	margin: 0;
+    padding: 0;
+}
+.menu li {
+	background-color: #D46A6A;
+	list-style-type: none;
+	float: left;}
+.menu a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.menu a:hover {
+	background-color: #FFAAAA;
+}
+
+#middleSection {
+	background-color: #FFAAAA;
+	overflow: auto;
+}
+.box {
+	color: white;
+	text-align: center;
+	font: small-caps bold 24px/1 sans-serif;
+	width: 25%;
+	height: 150px;
+	margin: 0 auto;
+	line-height: 100px;
+}
+.box1 {
+	background-color: #FFAAAA;
+	float: left;
+}
+.box2 {
+	background-color: #D46A6A;
+	float: left;
+}
+.box3 {
+	background-color: #801515;
+	float: left;
+}
+.box4 {
+	background-color: #550000;
+	float: left;
+}

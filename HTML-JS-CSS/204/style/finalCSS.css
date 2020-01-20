@@ -1,0 +1,80 @@
+/* Q2 */
+.smallbox {
+	float: left;
+	width: 100px;
+	height: 10px;
+}
+.sbr { background: red;}
+.sbo { background: orange;}
+.sby { background: yellow;}
+.sbg { background: green;}
+.sbb { background: blue;}
+.sbi { background: indigo;}
+.sbv { background: violet;}
+.clearbox { clear: left; }
+
+.spinbox {
+	float: left;
+	width: 100px;
+	height: 100px;
+	background: red;
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */transition: width 2s, height 2s, transform 2s;
+}
+.spinbox:hover {
+	width: 300px;
+	height: 300px;
+	-webkit-transform: rotate(180deg); /* Safari */
+	transform: rotate(180deg);
+}
+.sborange:hover { background: orange;}
+.sbyellow:hover { background: yellow;}
+.sbgreen:hover { background: green;}
+.sbblue:hover { background: blue;}
+.sbindigo:hover { background: indigo;}
+.sbviolet:hover { background: violet;}
+/* end of Q2 styles */
+
+/* Q3 */
+.side2side {
+	width: 100px;
+	height: 25px;
+	position: relative;
+	-webkit-animation: moveit 5s infinite; /* Safari */
+	animation: moveit 5s infinite; /* Standard */
+	animation-direction: alternate;
+}
+#s2sd1 {
+	background-color: #CAFFD4;
+	-webkit-animation-timing-function: linear; /* Safari */
+	animation-timing-function: linear; /* Standard */
+}
+#s2sd2 {
+	background-color: #48E8C1;
+	-webkit-animation-timing-function: ease; /* Safari */
+	animation-timing-function: ease; /* Standard */
+}
+#s2sd3 {
+	background-color: #5CCFFF;
+	-webkit-animation-timing-function: ease-in; /* Safari */
+	animation-timing-function: ease-in; /* Standard */
+}
+#s2sd4 {
+	background-color: #8295E8;
+	-webkit-animation-timing-function: ease-out; /* Safari */
+	animation-timing-function: ease-out; /* Standard */
+}
+#s2sd5 {
+	background-color: #8D4FFF;
+	-webkit-animation-timing-function: ease-in-out; /* Safari */
+	animation-timing-function: ease-in-out; /* Standard */
+}
+@-webkit-keyframes mymove { /* Safari */
+	0% {left: 0px;}
+	100% {left: 600px;}
+}
+@keyframes moveit { /* Standard */
+	0% {left: 0px;}
+	100% {left: 600px;}
+}
+/* custom Adobe color palette  */
+/* end of Q3 styles */

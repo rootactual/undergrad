@@ -1,0 +1,82 @@
+/*using green-ish color scheme 
+Light to dark: 64D201, 54A60A, 438707, 2C5E00, 1A3800
+*/
+
+#main {width: 800px;}
+.centerIt {text-align: center;}
+.sel {background-color: #438707;}
+
+#top-header {
+	background-color: #438707;
+	padding: 25px;
+	overflow: auto;
+}
+#top-header > h1 {
+	color: #64D201;
+	font: small-caps bold 2em sans-serif;
+	float: left;
+}
+#top-header > h2 {
+	color: #1A3800;
+	font: italic 300 1em/1.2em Helvetica;
+	margin: 2px;
+	float: none;
+}
+
+.menu {
+	background-color: #54A60A;
+	width: 100%;
+	overflow: auto;
+}
+.menu ul {
+	margin: 0;
+    padding: 0;
+}
+.menu li {
+	background-color: #54A60A;
+	list-style-type: none;
+	float: left;}
+.menu a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.menu a:hover {
+	background-color: #64D201;
+}
+
+#middleSection {
+	background-color: #64D201;
+	overflow: auto;
+}
+.box {
+	color: white;
+	text-align: center;
+	font: italic 1.2em "Fira Sans", serif;
+	height: 100px;
+	margin: 0 auto;
+	line-height: 100px;
+	overflow: hidden;
+}
+.box1 {
+	background-color: #64D201;
+	width: 30%;
+	float: right;
+}
+.box2 {
+	background-color: #54A60A;
+	width: 40%;
+	float: left;
+}
+.box3 {
+	background-color: #2C5E00;
+	width: 20%;
+	float: right;
+}
+.box4 {
+	background-color: #1A3800;
+	width: 0%;
+	float: left;
+}

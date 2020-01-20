@@ -1,0 +1,122 @@
+﻿/*using green-ish color scheme 
+Light to dark: 64D201, 54A60A, 438707, 2C5E00, 1A3800
+*/
+
+#main {
+    width: 800px;
+}
+
+.centerIt {
+    text-align: center;
+    color:white;
+}
+
+.sel {
+    background-color: #A4C1A2;
+}
+
+#top-header {
+    background-color: #1C3E40;
+    padding: 25px;
+    overflow: auto;
+    border-bottom: 2px solid white;
+}
+
+    #top-header > h1 {
+        color: antiquewhite;
+        font: small-caps bold 2em sans-serif;
+        float: left;
+        transform: skew(20deg, -10deg) scaleY(.66667);
+    }
+
+    #top-header > h2 {
+        color: white;
+        font: italic 300 1em/1.2em Helvetica;
+        margin: 2px;
+        float: right;
+        text-decoration:underline;
+    }
+
+.menu {
+    background-color: #2E878B;
+    width: 100%;
+    overflow: auto;
+}
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        background-color: #2E878B;
+        list-style-type: none;
+        float: left;
+    }
+
+    .menu a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        .menu a:hover {
+            background-color: #1C3E40;
+            cursor: crosshair;
+            font-style:italic;
+            font-size:120%;
+            font-variant:small-caps;
+        }
+
+#middleSection {
+    background-color: #A4C1A2;
+    overflow: auto;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    height: 100%;
+}
+
+.box {
+    color: white;
+    text-align: center;
+    font: italic 1.2em "Fira Sans", serif;
+    height: 100px;
+    margin: 0 auto;
+    line-height: 100px;
+    overflow: hidden;
+}
+
+.box1 {
+    background-color: #87b5ae;
+    width: 30%;
+    float: right;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-decoration: underline overline;
+}
+
+.box2 {
+    background-color: #017aae;
+    width: 40%;
+    float: left;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-decoration: underline overline;
+}
+
+.box3 {
+    background-color: #0fbfc9;
+    width: 30%;
+    float: right;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-decoration: underline overline;
+}
+
+.box4 {
+    background-color: #1A3800;
+    width: 0%;
+    float: left;
+}

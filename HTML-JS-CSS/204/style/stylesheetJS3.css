@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#myContainer {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    background-color: transparent;
+}
+#layer1 {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    background: transparent;
+}
+
+#layer2 {
+	width: 800px;
+	height: 600px;
+	position: absolute;
+	background-color: transparent;
+}

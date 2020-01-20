@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript I</title>
+    <style type="text/css">
+        canvas {
+            border: 2px solid black;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS Canvas</h1>
+
+    <p>A sample of Javascript producing a 1000px wide by 600px tall canvas.  100 circles with randomized colors and radii up to 50px.</p>
+    <canvas></canvas>
+    <p> To pick a random color, I first had to decide how random is defined.  My thought process was to create an array of pseudo-random hex colors,<br/>
+    then use <b>.floor()</b> and <b>.random()</b> against the <b>.length</b> of the hex array then use the stored variable for the stroke Style.  This felt to bulky and<br/>
+    not truly random.  The next option I attempted was creating a function to generate a number for R, G, and B.  This was much less bulky, but felt<br/>
+    as though it lacked efficiency.  Deeper research found the bithack method for hex (16777215 == ffffff).  As this is a one liner and taught me far more about JS<br/>
+    I much preferred this idea.  The final decision was to utilize the bithack, combined with leftward bitshift.  Credits for code snippets and knowledge can be found <br/>
+    within the script, as well as code for the previously mentioned concepts not utilized in the final product.
+    </section>
+    <footer>
+        <p><a href="index.html">Return to Homepage</a></p>
+    </footer>
+    <script src="scripts/JS1.js"></script>
+</body>
+</html>

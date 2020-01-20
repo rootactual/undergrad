@@ -1,0 +1,80 @@
+/*using blue-ish color scheme 
+Light to dark: AFBEFF, 819AFF, 1E4BFF, 001D94, 001672
+*/
+
+#main {width: 800px;}
+.centerIt {text-align: center;}
+.sel {background-color: #1E4BFF;}
+
+#top-header {
+	background-color: #1E4BFF;
+	padding: 25px;
+	overflow: auto;
+}
+#top-header > h1 {
+	color: #AFBEFF;
+	font: italic 300 1em/1.2em Helvetica;
+	float: right;
+}
+#top-header > h2 {
+	color: #001672;
+	font-family: fantasy;
+	float: left;
+}
+
+.menu {
+	background-color: #819AFF;
+	width: 100%;
+	overflow: auto;
+}
+.menu ul {
+	margin: 0;
+    padding: 0;
+}
+.menu li {
+	background-color: #819AFF;
+	list-style-type: none;
+	float: left;}
+.menu a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.menu a:hover {
+	background-color: #AFBEFF;
+}
+
+#middleSection {
+	background-color: #AFBEFF;
+	overflow: auto;
+}
+.box {
+	color: white;
+	text-align: center;
+	font: italic 1.2em "Fira Sans", serif;
+	height: 50px;
+	margin: 0 auto;
+	line-height: 25px;
+}
+.box1 {
+	background-color: #AFBEFF;
+	width: 15%;
+	float: right;
+}
+.box2 {
+	background-color: #819AFF;
+	width: 35%;
+	float: right;
+}
+.box3 {
+	background-color: #001D94;
+	width: 35%;
+	float: left;
+}
+.box4 {
+	background-color: #001672;
+	width: 15%;
+	float: right;
+}
