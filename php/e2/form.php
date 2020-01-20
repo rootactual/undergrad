@@ -9,7 +9,7 @@
     <form method="post" action="table.php">
 
         <fieldset>
-        <legend>Two drop-down lists for Exam2</legend>
+        <legend>Two drop-down lists</legend>
         <br><br>
 
         <label>Continent:<br>
