@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Order your IT-Shirt</title>
+    </head>
+
+<body>
+	<section>
+      <form method="post" action="processOrder.php">
+      <fieldset>
+         <legend> IT-Shirt Order Form </legend>
+
+      <table>
+         <tr>
+            <td>
+               <p>
+                 <label>Enter your name:<br>
+                  <input type="text" name="name">
+                 </label>
+               </p>
+               <p>
+                 <label>Enter your delivery address:<br>
+                 <input type="text" name="address">
+                 </label>
+
+
+               <p>
+                 <label>Size:<br></label>
+				 <label>
+                      <input type="radio" name="size" value="S">Small
+                  </label>
+                  <br>
+                   <label>
+                      <input type="radio" name="size" value="M">Medium
+                  </label>
+                  <br>
+                  <label>
+                      <input type="radio" name="size" value="L">Large
+                  </label>
+                  <br>
+                   <label>
+                      <input type="radio" name="size" value="XL">Extra Large
+                  </label>
+                  <br>
+               </p>
+
+               <p>
+               	  <label>Quantity<br>
+                       <select name="qty">
+                           <option>1</option>
+                           <option>2</option>
+                           <option>3</option>
+                       </select>
+                   </label>
+               </p>
+
+               <p>
+                   <label>
+                       Check box for expedited shipping:
+                       <input type="checkbox" name="rush">
+                  </label>
+               </p>
+
+               <p>
+                   <label>
+                         <input type="submit" name="submit" value="Order!" class="rounded">
+                     </label>
+               </p>
+            </td>
+         </tr>
+      </table>
+    </fieldset>
+  </form>
+  </section>
+
+</body>
+</html>
