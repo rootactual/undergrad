@@ -1,0 +1,24 @@
+.breadshrink {
+    font-size:75%;
+}
+
+footer {
+    text-align: center;
+    font-size: .8em;
+    border-top: 2px solid teal;
+}
+
+@media print {
+    body {
+        filter: Gray();
+        filter: url('#grayscale');
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    header nav, footer {
+        display:none;
+    }
+    img {
+        display:none;
+    }
+}
